@@ -1,7 +1,7 @@
 <?php
-namespace add;
+namespace App;
 
-abstract class Animals{
+abstract class Animal{
     private $name;
 
 
@@ -15,7 +15,7 @@ abstract class Animals{
      */
     public function getName()
     {
-        echo '$name' . $this->name;
+        echo $this->name;
     }
 
     /**
@@ -26,5 +26,10 @@ abstract class Animals{
         $this->name = $name;
     }
 
-    abstract function getNoise()::String
+    protected abstract function getNoise():String;
+
+    public function noise(){
+      return  $this->getNoise();
+    }
+
 }

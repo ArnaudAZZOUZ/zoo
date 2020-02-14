@@ -6,11 +6,11 @@ namespace App\Animals;
 
 use App\Animal;
 
-class CatFish extends Animal
+class Elephant extends Animal
 {
 
     protected function getNoise(): String
     {
-        return 'bouboubou';
+        return 'tooooooooout';
     } // TODO: Implement getNoise() method.
 }
